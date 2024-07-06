@@ -138,8 +138,7 @@ function utils.highlight(bufnr, start, end_, ns)
     ns,
     higroup,
     { start, 0 },
-    { end_, string.len(vim.fn.getline(end_)) },
-    { regtype = "c", inclusive = false }
+    { end_, string.len(vim.fn.getline(end_)) }
   )
 
   -- Clear buffer highlights again after timeout
